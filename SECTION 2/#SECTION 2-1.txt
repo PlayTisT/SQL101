@@ -1,1 +1,16 @@
-#======== SECTION 2 Zero Start ==========
+#======== SECTION 2 Zero Start ===========================================================
+# โครงสร้าง และ คำสั่ง SQL พื้นฐานที่เราจะพบเจอ  sqlite-sample-database
+# Table ตัวอย่างจะเป็น sample database has 11 tables
+# โหลด Database set จากเว็บ https://www.sqlitetutorial.net/sqlite-sample-database/
+# ลงโปรแกรม DB Browser for sqlite แล้วเอา database set ก้อนที่โหลดมา ใส่เข้าไป
+
+#============================================================================================
+
+SELECT * FROM customers;  # Output ดึงข้อมูลสมาชิก customers ทุก field (ทุก column)
+SELECT * FROM artists;    # Output artists ทุก field (ทุก column)
+
+SELECT name FROM artists;   # Output   id หายไป
+
+SELECT FirstName FROM customers;   # Output  แสดงผล column ชื่อจริง
+
+SELECT FirstName, LastName FROM customers;   # Output  แสดงผล column ชื่อจริง และ นามสกุล 
