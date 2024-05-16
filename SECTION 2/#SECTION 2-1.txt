@@ -6,11 +6,20 @@
 
 #============================================================================================
 
-SELECT * FROM customers;  # Output ดึงข้อมูลสมาชิก customers ทุก field (ทุก column)
-SELECT * FROM artists;    # Output artists ทุก field (ทุก column)
+SELECT * FROM customers;  # Output ดึงข้อมูลสมาชิก customers ใน field (ทุก column)
+SELECT * FROM artists;    # Output artists ใน field ทุก column
 
 SELECT name FROM artists;   # Output   id หายไป
 
 SELECT FirstName FROM customers;   # Output  แสดงผล column ชื่อจริง
 
 SELECT FirstName, LastName FROM customers;   # Output  แสดงผล column ชื่อจริง และ นามสกุล 
+
+#------------------------------------------------------------------------------------------------------
+SELECT  # เลือก
+   FirstName AS customer_firstname ,    #เปลี่ยนชื่อแสดงผลเป็น  customer_firstname (เดิม FirstName)
+   LastName  customer_lastname # เลือก column
+FROM customers;
+
+#------------------------------------------------------------------------------------------------------
+/*  sdasdsdasdsda s   */   คอมเม้นต์ 
