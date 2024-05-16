@@ -6,4 +6,4 @@ sql คือ Structured Query Language (SQL) เป็นภาษาโปร�
 
 
 # SQL101 - SQLite Tutorial
-![alt text](postman1.png)
+![alt text](sqllitepic.png)
