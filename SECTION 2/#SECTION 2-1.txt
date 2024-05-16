@@ -23,3 +23,30 @@ FROM customers;
 
 #------------------------------------------------------------------------------------------------------
 /*  sdasdsdasdsda s   */   คอมเม้นต์ 
+#------------------------------------------------------------------------------------------------------
+
+SELECT * FROM customers    
+WHERE CustomerId = 1; # ดึงข้อมูลสมาชิกเลขที่ 1 ทั้งหมดมาแสดงผล
+
+SELECT FirstName, LastName FROM customers
+WHERE CustomerId = 4 ;  # ดึงข้อมูลสมาชิกเลขที่ 4 แค่ชื่อนามสกุล
+
+SELECT * FROM customers
+WHERE Country = 'Canada' AND State ='ON';
+
+SELECT * FROM customers
+WHERE Country = 'Canada' OR Country = 'Canada';
+
+#------------------------------------------------------------------------------------------------------
+Order by
+#------------------------------------------------------------------------------------------------------
+SELECT * FROM customers
+WHERE Country = 'Canada' OR Country = 'Canada'
+ORDER BY FirstName ;
+
+#ต้องการเรียงมากไปหาน้อยสุด  รัน 33 ถึง 1     # Ascending Order น้อยไปหามากปกติ (เรียงปกติ # DESC  Decending Order มากไปหาน่อย ตัวอย่างล่าง
+SELECT * FROM customers
+WHERE Country = 'Canada' OR Country = 'Canada'
+ORDER BY CustomerId DESC;
+
+
